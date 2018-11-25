@@ -42,4 +42,13 @@ public class ProductData {
                 random.nextInt(100) + 1,
                 (float) Math.round(random.nextInt(100_00) + 1) / 100);
     }
+
+    @Override
+    public String toString() {
+        return "ProductData{" +
+                "name='" + name + '\'' +
+                ", qty=" + qty +
+                ", price=" + price +
+                '}';
+    }
 }
